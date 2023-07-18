@@ -111,15 +111,13 @@ class Solution:
             #type message: string
             #return type: string
         answer = ""
-        message = message.upper()  
-	message = message.strip()
+        message = message.strip().upper()
         for i in range(len(message)):
             if message[i] == " ":
                 answer += ""
             else:
                 answer += MORSE_CODE_DICT[message[i]] + " "
-        return answer
-        pass           
+        return answer           
 
 def main():
     str1=input()
