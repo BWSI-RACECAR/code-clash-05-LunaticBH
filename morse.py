@@ -115,12 +115,12 @@ class Solution:
         message = message.strip().upper()
         for i in range(len(message)):
             if message[i] == " ":
-		s += 1
-	    if s = 2:
+                s += 1
+            if s = 2:
 		answer += " "
             else:
                 answer += MORSE_CODE_DICT[message[i]] + " "
-		s = 0
+                s = 0
         return answer           
 
 def main():
