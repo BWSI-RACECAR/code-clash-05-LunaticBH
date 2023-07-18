@@ -118,10 +118,10 @@ class Solution:
 		answer += ""
 		i += 1
 	    else:
-		answer += MORSE_CODE_DICT{message[i]}
-		    i += 1
-	    return answer
-            pass
+		answer += MORSE_CODE_DICT[message[i]] + " "
+		i += 1
+	return answer
+	pass
 
 def main():
      str1=input()
