@@ -114,7 +114,7 @@ class Solution:
         message = message.strip().upper()
         for i in range(len(message)):
             if message[i] == " ":
-                answer += ""
+                answer += " "
             else:
                 answer += MORSE_CODE_DICT[message[i]] + " "
         return answer           
