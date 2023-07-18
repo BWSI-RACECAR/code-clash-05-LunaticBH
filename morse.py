@@ -111,6 +111,7 @@ class Solution:
             #type message: string
             #return type: string
         answer = ""
+        message = message.upper()  
         if message[0] == " ":
                 message = message[1:]
         for letter in message:
