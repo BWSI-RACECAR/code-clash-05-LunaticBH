@@ -107,27 +107,25 @@ MORSE_CODE_DICT = { 'A':'.-', 'B':'-...',
 ##########################################################################
 
 class Solution:
-     def encrypt(self, message):
-        #type message: string
-        #return type: string
-          message = message.upper()
-	  if message[0] == " ":
-	       message = message[1:]
-	  for i in message:
-	       if message[i] == " ":
-	            answer += ""
-		    i += 1
-	       else:
-		    answer += MORSE_CODE_DICT[message[i]] + " "
-		    i += 1
-	  return answer
-          pass
+    def encrypt(self, message):
+            #type message: string
+            #return type: string
+        answer = ""
+        if message[0] == " ":
+                message = message[1:]
+        for letter in message:
+            if letter == "  ":
+                answer += ""
+            else:
+                answer += MORSE_CODE_DICT[letter] + " "
+        return answer
+        pass           
 
 def main():
-     str1=input()
-     tc1= Solution()
-     ans=tc1.encrypt(str1)
-     print(ans)
+    str1=input()
+    tc1= Solution()
+    ans=tc1.encrypt(str1)
+    print(ans)
 
 if __name__ == '__main__':
     main()
