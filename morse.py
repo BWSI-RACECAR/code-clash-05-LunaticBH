@@ -113,13 +113,11 @@ class Solution:
         answer = ""
         message = message.upper()  
 	message = message.strip()
-        if message[0] == " ":
-            message = message[1:]
-        for letter in message:
-            if letter == "  ":
+        for i in range(len(message)):
+            if message[i] == " ":
                 answer += ""
             else:
-                answer += MORSE_CODE_DICT[letter] + " "
+                answer += MORSE_CODE_DICT[message[i]] + " "
         return answer
         pass           
 
