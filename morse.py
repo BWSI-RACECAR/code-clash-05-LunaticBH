@@ -113,7 +113,7 @@ class Solution:
         answer = ""
         message = message.upper()  
         if message[0] == " ":
-                message = message[1:]
+            message = message[1:]
         for letter in message:
             if letter == "  ":
                 answer += ""
