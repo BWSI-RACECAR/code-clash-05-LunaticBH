@@ -112,6 +112,7 @@ class Solution:
             #return type: string
         answer = ""
         message = message.upper()  
+	message = message.strip()
         if message[0] == " ":
             message = message[1:]
         for letter in message:
