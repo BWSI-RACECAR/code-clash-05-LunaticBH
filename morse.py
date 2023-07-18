@@ -111,7 +111,7 @@ class Solution:
             #type message: string
             #return type: string
         answer = ""
-	s = 0
+        s = 0
         message = message.strip().upper()
         for i in range(len(message)):
             if message[i] == " ":
