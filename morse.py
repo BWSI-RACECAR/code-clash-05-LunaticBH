@@ -117,7 +117,7 @@ class Solution:
             if message[i] == " ":
                 s += 1
             if s == 2:
-		answer += " "
+                answer += " "
             else:
                 answer += MORSE_CODE_DICT[message[i]] + " "
                 s = 0
